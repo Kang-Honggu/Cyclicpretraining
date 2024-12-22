@@ -1,0 +1,44 @@
+RFMiD: 
+  data_dir: dataset/RFMiD_Images/
+  train_list: dataset/RFMiD_Training_Labels.csv
+  val_list: dataset/RFMiD_Validation_Labels.csv
+  test_list: dataset/RFMiD_Testing_Labels.csv
+  diseases: ['Disease_Risk','DR','ARMD','MH','DN','MYA','BRVO','TSLN','ERM','LS','MS','CSR','ODC','CRVO','AH','ODP','ODE','AION','PT','RT','RS','CRS','EDN','RPEC','MHL'] # 25
+  task_type: mutli-label classification
+  imagetype: png
+  
+ODIR-5k: 
+  data_dir: dataset/ODIR_5k_images/
+  train_list: dataset/ODIR-5k_train.csv
+  val_list: dataset/ODIR-5k_val.csv
+  test_list: dataset/ODIR-5k_test.csv
+  diseases: ['D','G','C','A','H','M','O'] #  7 
+  task_type: multi-label classification
+  imagetype: jpg
+
+MuRED: 
+  data_dir: dataset/MuRED_images/
+  train_list: dataset/MuRed_train.csv
+  val_list: dataset/MuRed_val.csv
+  test_list: dataset/MuRed_train.csv
+  diseases: ["DR","NORMAL","MH","ODC","TSLN","ARMD","DN","MYA","BRVO","ODP","CRVO","CNV","RS","ODE","LS","CSR","HTR","ASR","CRS","OTHER"] # 20
+  task_type: multi-label classification
+  imagetype: png
+
+RFMiD2: 
+  data_dir: dataset/RFMiD2_Images/
+  train_list: dataset/RFMiD_2_Training_Labels.csv
+  val_list: dataset/RFMiD_2_Validation_Labels.csv
+  test_list: dataset/RFMiD_2_Testing_Labels.csv
+  diseases: ["WNL", "BRVO", "CME", "CRS", "CSR", "CWS", "DR", "EDN", "HR", "LS", "MH", "MS", "MYA", "ODC", "ODE", "ODP", "RHL", "SOFE", "TV"] # 19
+  task_type: mutli-label classification
+  imagetype: jpg
+
+1000_fundus_images:
+  data_dir: dataset/1000_fundus_images/
+  train_list: dataset/1000_fundus_images_train.csv
+  val_list: dataset/1000_fundus_images_val.csv
+  test_list: dataset/1000_fundus_images_test.csv
+  diseases: ['Normal','TF','LOC','DR1','DR2','DR3','BRVO','CRVO','RRD','CSCR','VKH','Maculopathy','ERM','MH','PM','PG','OA','SHR','DSE','DD','CDA','RP','BCD','PRD','MNF','VP','FN','MHE','YWSF','VT','FIbrosis','LS','Silicon_oil','BF1','BF2'] #35
+  task_type: multi-class classification
+  imagetype: jpg
